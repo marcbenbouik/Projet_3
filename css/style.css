@@ -1,14 +1,16 @@
-#corps {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    min-width: 992px;
+body {
     max-width: 1400px;
     margin: auto;
+}
+
+#corps {
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    
     padding-left: 62px;
     padding-right: 50px;
-    border: 1px solid #F2F2F2;
 }
 
 /* en-tete avec logo*/
