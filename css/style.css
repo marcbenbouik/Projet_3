@@ -1,9 +1,6 @@
 body {
     max-width: 1400px;
     margin: auto;
-}
-
-#corps {
     position: relative;
     flex-direction: column;
     justify-content: flex-start;
@@ -38,6 +35,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: -43px;
 }
 
 #bookie {
@@ -54,7 +52,7 @@ nav {
     color: #000000;
     text-decoration: none;
     margin-left: 68px;
-    height: 50px;
+    padding-top: 43px;
     border-top: 3px solid #FFFFFF;
 }
 
@@ -73,8 +71,7 @@ nav {
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
-    line-height: 26px;
-
+    line-height: 40px;
     color: #000000;
 }
 
@@ -92,6 +89,7 @@ form {
     display: flex;
     flex-direction: row;
     margin-left: 0px;
+    margin-top: 30px;
 }
 
 #cadreGps {
@@ -148,6 +146,7 @@ button {
     font-weight: 700;
     font-size: 17px;
     line-height: 20px;
+    margin-top: 30px;
 }
 
 .filtre {
@@ -166,18 +165,12 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /*padding-right: 464px;*/
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 17px;
     line-height: 20px;
     margin-top: 31px;
-
-}
-
-.txtFiltre {
-    margin-top: 13px;
 
 }
 
@@ -190,14 +183,15 @@ button {
     border-radius: 25px;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #billet {
     position: relative;
     height: 16.26px;
     width: 22px;
-    margin-top: 14px;
-    margin-right: -20px;
+
 }
 
 #famille {
@@ -209,15 +203,14 @@ button {
     border: 2px solid #D9D9D9;
     background: #FFFFFF;
     border-radius: 25px;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #homme {
     position: relative;
     height: 22px;
     width: 13.44px;
-    margin-top: 12px;
-    margin-left: 0px;
-    margin-right: -20px;
 }
 
 
@@ -230,14 +223,14 @@ button {
     border: 2px solid #D9D9D9;
     background: #FFFFFF;
     border-radius: 25px;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #coeur {
     position: relative;
     width: 22px;
     height: 18.33px;
-    margin-top: 13px;
-    margin-right: -20px;
 }
 
 #anim {
@@ -249,14 +242,14 @@ button {
     border: 2px solid #D9D9D9;
     background: #FFFFFF;
     border-radius: 25px;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #chien {
     position: relative;
     height: 22px;
     width: 22px;
-    margin-top: 12px;
-    margin-right: -20px;
 }
 
 #eco:hover,
@@ -270,23 +263,27 @@ button {
     display: flex;
     flex-direction: row;
     margin-top: 39px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
 #rond {
-    width: 24px;
-    height: 24px;
+    position: relative;
+    display: flex;
+    width: 26px;
+    height: 22px;
     border: 1px solid #D9D9D9;
     border-radius: 24px;
-    justify-content: space-around;
-    margin-right: 20px;
-    margin-top: 12px;
+    justify-content: center;
+    padding-top: 4px;
+    
 }
 
 #i {
     width: 4px;
     height: 10px;
-    margin-left: 10px;
-    margin-top: 5px;
+    position: relative;
 }
 
 /*resultats*/
@@ -411,14 +408,15 @@ h2 {
 .descrHeberg {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    border: solid #000000;
-    height: 73px;
+    justify-content: space-around;
+    height: 68px;
+    padding-left: 10px;
+    padding-bottom: 5px;
 }
 
 .titre {
     position: relative;
-    margin-top: ;
+    
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -454,21 +452,24 @@ h2 {
     width: 420px;
     height: 625px;
     border-radius: 20px;
-    background: #F2F2F2;
+    background: #F2F2F2;;
 }
 
 .popu {
-    position: absolute;
-    margin-left: 37px;
+    position: relative;
     width: 420px;
     height: 625px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 
 }
 
 .boxPopu {
     position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     width: 343px;
     height: 144px;
     margin-bottom: 33px;
@@ -506,28 +507,37 @@ h2 {
     background-position: center;
 }
 
+.descrPopu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 5px;
+    height: 136px;
+}
+
 .titre2 {
     position: relative;
-    width: 169px;
+    width: 160px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
     color: #000000;
+    margin-bottom: -17px;
 
 }
 
 .descr2 {
     position: relative;
     width: 169px;
-
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
     color: #000000;
+    margin-bottom: 17px;
 }
 
 /*logo bleu */
@@ -556,8 +566,8 @@ i {
 
 #courbe {
     position: absolute;
-    right: 42px;
-    top: 46px;
+    top: 45px;
+    right: 50px;
 }
 
 #activités {
@@ -623,13 +633,14 @@ i {
     position: relative;
     background: #FFFFFF;
     border-radius: 0px 0px 20px 20px;
-    padding-left: 19px;
-    align-items: center;
+    padding-left: 10px;
+    padding-top: 10px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
+    height: 46px;
 }
 
 footer {
@@ -651,28 +662,66 @@ h3 {
     color: #000000;
 }
 
+.pied {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.pied2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 145px;
+}
+
+#propos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70px;
+}
+
 @media screen and (min-width: 768px) and (max-width: 992px) {
-    #corps {
+    body {
         position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        min-width: 768px;
         max-width: 992px;
         margin: auto;
         padding-left: 0px;
         padding-right: 0px;
-        border: 1px solid #F2F2F2;
+    }
+
+    #intro, form, nav {
+        margin-left: 7px;
+    }
+
+    #encre{
+        margin-right: 7px;
     }
 
     /* filtres*/
+
+#section{
+    padding-left: 7px;
+    width: 98%;
+}
 
     .filtre2 {
         position: relative;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 880px;
+        width: 100%;
         font-family: 'Raleway';
         font-style: normal;
         font-weight: 700;
@@ -680,6 +729,15 @@ h3 {
         line-height: 20px;
         margin-top: 31px;
 
+    }
+
+    #info{
+        justify-content: start;
+    }
+
+    #rond{
+        margin-left: 7px;
+        margin-right: 7px;
     }
 
     /*resultats*/
@@ -692,11 +750,15 @@ h3 {
         height: 950px;
     }
 
+    .container{
+        width: 100%;
+    }
+
     /* poupulaire */
 
     .container2 {
         position: relative;
-        width: 883px;
+        width: 100%;
         height: 278px;
         border-radius: 20px;
         background: #F2F2F2;
@@ -705,19 +767,19 @@ h3 {
     .popu {
         position: relative;
         width: 100%;
-        height: 625px;
+        height: 60%;
         margin-left: 0px;
+        margin-top: 0px;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-
+        align-items: start;
     }
 
     .boxPopu {
         position: relative;
         width: 252px;
         height: 144px;
-        margin-bottom: 33px;
         border-radius: 20px;
         background-color: #FFFFFF;
         display: flex;
@@ -726,26 +788,18 @@ h3 {
     }
 
     .descrPopu {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        margin-right: 5px;
-        height: 136px;
-        padding-top: 2px;
+        height: 95%;
     }
 
     .titre2 {
         position: relative;
         width: 111px;
-        margin-top: 0px;
-        height: 100%;
-
+        margin-bottom: 3px;
     }
 
     .descr2 {
         position: relative;
         width: 120px;
-        margin-top: 0px;
 
     }
 
@@ -780,44 +834,20 @@ h3 {
     }
 
     #vport {
-        position: relative;
-        width: 182px;
-        height: 267px;
         background-image: url(../Images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
-        background-size: cover;
-        background-position: center;
-        border-radius: 20px;
-
     }
 
     #pomeg {
-        width: 182px;
-        height: 267px;
         background-image: url(../Images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
-        background-size: cover;
-        background-position: center;
-        border-radius: 20px;
-        position: relative;
     }
 
     #cal {
-        width: 182px;
-        height: 267px;
         background-image: url(../Images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
-        background-size: cover;
-        background-position: center;
-        border-radius: 20px;
-        position: relative;
     }
 
     #notre {
-        width: 182px;
-        height: 267px;
         background-image: url(../Images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
-        background-size: cover;
-        background-position: center;
-        border-radius: 20px;
-        position: relative;
+
     }
 
     .blockActi {
@@ -829,13 +859,21 @@ h3 {
         height: 267px;
     }
 
+#acti{
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
     #vport,
     #pomeg,
     #cal,
     #notre {
+        position: relative;
         width: 182px;
         height: 267px;
         border-radius: 20px 20px 0px 0px;
+        background-size: cover;
+        background-position: center;
     }
 
     .legend {
@@ -874,7 +912,6 @@ h3 {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        min-width: 200px;
         max-width: 768px;
         border: 1px solid #F2F2F2;
         width: 100%;
@@ -892,13 +929,19 @@ h3 {
 
     #encre {
         display: flex;
+        position: relative;
         flex-direction: row;
         justify-content: space-between;
         padding-top: 36px;
         width: 100%;
+        margin-left: 0px;
+        margin-bottom: -50px;
     }
 
     .link {
+        display: flex;
+        justify-content: center;
+        position: relative;
         font-family: 'Raleway';
         font-style: normal;
         font-weight: 400;
@@ -906,10 +949,17 @@ h3 {
         line-height: 19px;
         color: #000000;
         text-decoration: none;
-        height: 50px;
-        border-top: 3px solid #FFFFFF;
-        margin: auto;
+        padding-bottom: 50px;
+        border-top: 0px;
+        border-bottom: 3px solid #F2F2F2;
+        width: 100%;
+        margin-left: 0px;
 
+    }
+
+    .link:hover{
+        border-bottom: 3px solid #0065FC;
+        border-top: 0px;
     }
 
     #bookie {
@@ -919,7 +969,8 @@ h3 {
     }
 
     #intro {
-        margin-left: 5%;
+        margin-left: 7px;
+        font-size: 15px;
     }
 
     form {
@@ -961,11 +1012,10 @@ h3 {
     .filtre {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
         font-family: 'Raleway';
         font-style: normal;
         font-weight: 700;
-        font-size: 13px;
+        font-size: 12px;
         line-height: 20px;
         height: 150px;
         width: 50%;
@@ -975,18 +1025,24 @@ h3 {
     #eco,
     #famille,
     #rom {
-        position: relative;
-        width: 160px;
+        justify-content: start;
+        width: 140px;
         height: 46px;
-        border: 2px solid #D9D9D9;
-        background: #FFFFFF;
-        border-radius: 25px;
-        display: flex;
-        flex-direction: row;
+        padding-left: 20px;
+    }
+
+    #billet, #homme, #coeur, #chien{
+        margin-top: 6px;
     }
 
     #info {
-        margin-left: 5%;
+        width: 100%;
+        justify-content: start;
+    }
+
+    #rond{
+        margin-right: 7px;
+        margin-left: 7px;
     }
 
     /*resultats*/
@@ -1003,14 +1059,14 @@ h3 {
         display: flex;
         flex-direction: column;
         align-content: center;
-        height: 1245px;
+        height: 1280px;
 
     }
 
     .container {
         position: relative;
         width: 100%;
-        height: 1365px;
+        height: 1325px;
         border-radius: 20px;
         background: #FFFFFF;
 
@@ -1058,7 +1114,7 @@ h3 {
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 1000px;
+        height: 850px;
     }
 
     .blockActi {
@@ -1079,7 +1135,6 @@ h3 {
 
     .legend {
         width: 316px;
-        height: 19px;
         border-radius: 0px 0px 20px 20px;
         box-shadow: 6px 0px px #F2F2F2;
     }
@@ -1088,9 +1143,13 @@ h3 {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        height: 480px;
+        height: 440px;
         margin-top: 60px;
         padding-top: 45px;
         padding-left: 7%;
+    }
+
+    #propos{
+        margin-top: 10px;
     }
 }
