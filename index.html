@@ -5,33 +5,31 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet">
     <title>Booki</title>
 </head>
 
 <body>
-    <div id="corps">
+    <div>
         <nav>
-            <img src="Images/logo/Booki.png" alt="logo bookie" id="bookie">
-            <div id="encre">
+            <img src="Images/logo/Booki.png" alt="logo bookie">
+            <div>
                 <a href="#hébergement" class="link">Hébergements</a>
                 <a href="#activités" class="link">Activités</a>
             </div>
         </nav>
-        <section id="intro">
+        <section class="intro">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p class="txt">En plein centre-ville ou en pleine nature</p>
             <form>
-                <div id="cadreGps">
-                    <i class="fas fa-map-marker-alt" id="gps"></i>
+                <div>
+                    <i class="fas fa-map-marker-alt"></i>
                 </div>
-                <input type="text" name="recherche" id="ville" value="Marseille,France">
+                <input type="text" name="recherche" id="ville" placeholder="Marseille,France">
                 <button type="button">
                     <span id="recherche">Recherche</span>
                     <i id="loupe" class="fas fa-search"></i>
@@ -40,25 +38,25 @@
         </section>
 
 
-        <section id="section">
+        <section class="section">
             <p>Filtres</p>
-            <div class="filtre2">
-                <div id="eco" class="filtre">
+            <div>
+                <a href="#" id="eco" class="filtre">
                     <i class="fas fa-money-bill-wave" id="billet"></i>
                     <p class="txtFiltre">Économique</p>
-                </div>
-                <div id="famille" class="filtre">
+                </a>
+                <a href="#" id="famille" class="filtre">
                     <i class="fas fa-male" id="homme"></i>
                     <p class="txtFiltre">Familial</p>
-                </div>
-                <div id="rom" class="filtre">
+                </a>
+                <a href="#" id="rom" class="filtre">
                     <i class="fas fa-heart" id="coeur"></i>
                     <p class="txtFiltre">Romantique</p>
-                </div>
-                <div id="anim" class="filtre">
+                </a>
+                <a href="#" id="anim" class="filtre">
                     <i class="fas fa-dog" id="chien"></i>
                     <p class="txtFiltre">Animaux autorisés</p>
-                </div>
+                </a>
             </div>
         </section>
         <section id="info">
@@ -155,7 +153,9 @@
                             </div>
                         </div>
                     </a>
+
                 </div>
+                <a href="#" id="more">Afficher plus</a>
             </article>
             <article class="container2">
                 <h2 class="resultTitle">Les plus populaires</h2>
@@ -228,26 +228,28 @@
             </article>
         </section>
         <footer>
-            <div class="pied">
-                <h3>A propos</h3>
-                <div id="propos">
-                    <p class="txt">Fonctionnement du site</p>
-                    <p class="txt">Conditons générales</p>
-                    <p class="txt">Données et confidentialités</p>
+            <div class="size">
+                <div class="pied">
+                    <h3>A propos</h3>
+                    <div id="propos">
+                        <p class="txt">Fonctionnement du site</p>
+                        <p class="txt">Conditons générales</p>
+                        <p class="txt">Données et confidentialités</p>
+                    </div>
                 </div>
-            </div>
-            <div class="pied2">
-                <h3>Nos hébergements</h3>
-                <div class="contact">
-                    <p class="txt">Charte qualités</p>
-                    <p class="txt">Proposer votre hôtel</p>
+                <div class="pied2">
+                    <h3>Nos hébergements</h3>
+                    <div class="contact">
+                        <p class="txt">Charte qualités</p>
+                        <p class="txt">Proposer votre hôtel</p>
+                    </div>
                 </div>
-            </div>
-            <div class="pied2">
-                <h3>Assistance</h3>
-                <div class="contact">
-                    <p class="txt">Centre d'aide</p>
-                    <p class="txt">Nous contacter</p>
+                <div class="pied2">
+                    <h3>Assistance</h3>
+                    <div class="contact">
+                        <p class="txt">Centre d'aide</p>
+                        <p class="txt">Nous contacter</p>
+                    </div>
                 </div>
             </div>
         </footer>

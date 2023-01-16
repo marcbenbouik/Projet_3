@@ -5,7 +5,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
 
-    
+
     padding-left: 62px;
     padding-right: 50px;
 }
@@ -31,14 +31,14 @@ nav {
     margin-right: 0%;
 }
 
-#encre {
+nav div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: -43px;
 }
 
-#bookie {
+nav img {
     width: 61.09px;
     height: 19px;
 }
@@ -66,7 +66,7 @@ nav {
     border-top: 3px solid #0065FC;
 }
 
-#intro {
+.intro {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -92,7 +92,7 @@ form {
     margin-top: 30px;
 }
 
-#cadreGps {
+form div{
     background: #F2F2F2;
     width: 50px;
     height: 50px;
@@ -100,11 +100,12 @@ form {
     border-radius: 15px 0px 0px 15px;
 }
 
-#gps {
+form div i {
     width: 14px;
     height: 18px;
     margin-left: 18px;
     margin-top: 16px;
+    color: #000000;
 }
 
 input {
@@ -136,17 +137,21 @@ button {
 
 #loupe {
     display: none;
+    color: #FFFFFF;
 }
 
 /* filtres */
-#section {
-    width: 100%;
+.section {
+
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 17px;
     line-height: 20px;
     margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .filtre {
@@ -161,7 +166,7 @@ button {
     height: 50px;
 }
 
-.filtre2 {
+.section div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -170,14 +175,16 @@ button {
     font-weight: 700;
     font-size: 17px;
     line-height: 20px;
-    margin-top: 31px;
-
+    width: 100%;
+    max-width: 890px;
+    margin-left: 10px;
 }
 
-#eco {
+#anim,
+#eco,
+#famille,
+#rom {
     position: relative;
-    width: 175px;
-    height: 44px;
     border: 2px solid #D9D9D9;
     background: #FFFFFF;
     border-radius: 25px;
@@ -185,6 +192,12 @@ button {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+}
+
+#eco {
+    width: 175px;
+    height: 44px;
+
 }
 
 #billet {
@@ -195,16 +208,8 @@ button {
 }
 
 #famille {
-    position: relative;
-    display: flex;
-    flex-direction: row;
     width: 136px;
     height: 44px;
-    border: 2px solid #D9D9D9;
-    background: #FFFFFF;
-    border-radius: 25px;
-    justify-content: space-around;
-    align-items: center;
 }
 
 #homme {
@@ -215,16 +220,8 @@ button {
 
 
 #rom {
-    position: relative;
-    display: flex;
-    flex-direction: row;
     width: 175px;
     height: 44px;
-    border: 2px solid #D9D9D9;
-    background: #FFFFFF;
-    border-radius: 25px;
-    justify-content: space-around;
-    align-items: center;
 }
 
 #coeur {
@@ -234,16 +231,8 @@ button {
 }
 
 #anim {
-    position: relative;
-    display: flex;
-    flex-direction: row;
     width: 226px;
     height: 44px;
-    border: 2px solid #D9D9D9;
-    background: #FFFFFF;
-    border-radius: 25px;
-    justify-content: space-around;
-    align-items: center;
 }
 
 #chien {
@@ -312,7 +301,8 @@ h2 {
     height: 626px;
     border-radius: 20px;
     background: #F2F2F2;
-
+    display: flex;
+    flex-direction: column;
 }
 
 .resultTitle {
@@ -333,7 +323,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    height: 626px;
+    height: 450px;
 }
 
 .boxHeberg {
@@ -345,64 +335,42 @@ h2 {
     justify-content: space-between;
 }
 
-.canebiere {
-    width: 236px;
-    height: 114px;
-    border: 5px solid #FFFFFF;
-    border-radius: 20px 20px 0px 0px;
-    background-image: url(../Images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.port {
-    width: 236px;
-    height: 114px;
-    border: 5px solid #FFFFFF;
-    border-radius: 20px 20px 0px 0px;
-    background-image: url(../Images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.mouettes {
-    width: 236px;
-    height: 114px;
-    border: 5px solid #FFFFFF;
-    border-radius: 20px 20px 0px 0px;
-    background-image: url(../Images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.mer {
-    width: 236px;
-    height: 114px;
-    border: 5px solid #FFFFFF;
-    border-radius: 20px 20px 0px 0px;
-    background-image: url(../Images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.panier {
-    width: 236px;
-    height: 114px;
-    border: 5px solid #FFFFFF;
-    border-radius: 20px 20px 0px 0px;
-    background-image: url(../Images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
+.canebiere,
+.port,
+.mouettes,
+.mer,
+.panier,
 .amina {
     width: 236px;
     height: 114px;
     border: 5px solid #FFFFFF;
     border-radius: 20px 20px 0px 0px;
-    background-image: url(../Images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
     background-size: cover;
     background-position: center;
+}
+
+.canebiere {
+    background-image: url(../Images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+}
+
+.port {
+    background-image: url(../Images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+}
+
+.mouettes {
+    background-image: url(../Images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+}
+
+.mer {
+    background-image: url(../Images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+}
+
+.panier {
+    background-image: url(../Images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+}
+
+.amina {
+    background-image: url(../Images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
 }
 
 .descrHeberg {
@@ -416,14 +384,14 @@ h2 {
 
 .titre {
     position: relative;
-    
+
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
     color: #000000;
-    
+
 }
 
 .descr {
@@ -444,6 +412,17 @@ h2 {
     height: 12px;
 }
 
+#more {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    margin-left: 3%;
+    margin-top: 20px;
+
+}
 
 /* poupulaire */
 
@@ -452,7 +431,7 @@ h2 {
     width: 420px;
     height: 625px;
     border-radius: 20px;
-    background: #F2F2F2;;
+    background: #F2F2F2;
 }
 
 .popu {
@@ -580,46 +559,32 @@ i {
     justify-content: space-between;
 }
 
-
-#vport {
+#vport,
+#pomeg,
+#cal,
+#notre {
     position: relative;
     width: 302px;
     height: 389px;
-    background-image: url(../Images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 20px 20px 0px 0px;
+}
 
+#vport {
+    background-image: url(../Images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
 }
 
 #pomeg {
-    width: 302px;
-    height: 389px;
     background-image: url(../Images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px 20px 0px 0px;
-    position: relative;
 }
 
 #cal {
-    width: 302px;
-    height: 389px;
     background-image: url(../Images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px 20px 0px 0px;
-    position: relative;
 }
 
 #notre {
-    width: 302px;
-    height: 389px;
     background-image: url(../Images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px 20px 0px 0px;
-    position: relative;
 }
 
 .blockActi {
@@ -633,24 +598,32 @@ i {
     position: relative;
     background: #FFFFFF;
     border-radius: 0px 0px 20px 20px;
-    padding-left: 10px;
-    padding-top: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
-    height: 46px;
+    height: 56px;
 }
 
+
 footer {
+    background-color: #F2F2F2;
+    height: 225px;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+}
+
+.size {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    background-color: #F2F2F2;
-    height: 180px;
-    margin-top: 60px;
-    padding-top: 45px;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 80%;
 }
 
 h3 {
@@ -660,131 +633,85 @@ h3 {
     font-size: 18px;
     line-height: 21px;
     color: #000000;
+    margin-bottom: 10px;
 }
 
-.pied {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.pied2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 145px;
-}
 
 #propos {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 100px;
+    height: 75px;
 }
 
 .contact {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 70px;
+    height: 50px;
+    line-height: 100%;
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
     body {
-        position: relative;
-        display: flex;
-        flex-direction: column;
         justify-content: center;
         max-width: 992px;
-        margin: auto;
         padding-left: 0px;
         padding-right: 0px;
     }
 
-    #intro, form, nav {
+    #intro,
+    form,
+    nav {
         margin-left: 7px;
     }
 
-    #encre{
+    nav div {
         margin-right: 7px;
     }
 
     /* filtres*/
 
-#section{
-    padding-left: 7px;
-    width: 98%;
-}
-
-    .filtre2 {
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-        font-family: 'Raleway';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 17px;
-        line-height: 20px;
-        margin-top: 31px;
-
+    .section {
+        padding-left: 7px;
+        width: 98%;
     }
 
-    #info{
-        justify-content: start;
-    }
-
-    #rond{
+    #rond {
         margin-left: 7px;
-        margin-right: 7px;
     }
 
     /*resultats*/
     .result {
-        position: relative;
-        display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        margin-top: 39px;
         height: 950px;
     }
 
-    .container{
+    .container {
         width: 100%;
     }
 
     /* poupulaire */
 
     .container2 {
-        position: relative;
         width: 100%;
         height: 278px;
-        border-radius: 20px;
-        background: #F2F2F2;
     }
 
     .popu {
-        position: relative;
         width: 100%;
         height: 60%;
         margin-left: 0px;
         margin-top: 0px;
-        display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: start;
     }
 
     .boxPopu {
-        position: relative;
         width: 252px;
         height: 144px;
-        border-radius: 20px;
-        background-color: #FFFFFF;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
     }
 
     .descrPopu {
@@ -792,45 +719,19 @@ h3 {
     }
 
     .titre2 {
-        position: relative;
         width: 111px;
         margin-bottom: 3px;
     }
 
     .descr2 {
-        position: relative;
         width: 120px;
 
     }
 
-    .soleilMatin {
-        width: 106px;
-        height: 134px;
-        border: 5px solid #FFFFFF;
-        border-radius: 20px 0px 0px 20px;
-        background-image: url(../Images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
-        background-size: cover;
-        background-position: center;
-    }
-
-    .coeurEau {
-        width: 106px;
-        height: 134px;
-        border: 5px solid #FFFFFF;
-        border-radius: 20px 0px 0px 20px;
-        background-image: url(../Images/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg);
-        background-size: cover;
-        background-position: center;
-    }
-
+    .soleilMatin,
+    .coeurEau,
     .bleuBlanc {
         width: 106px;
-        height: 134px;
-        border: 5px solid #FFFFFF;
-        border-radius: 20px 0px 0px 20px;
-        background-image: url(../Images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
-        background-size: cover;
-        background-position: center;
     }
 
     #vport {
@@ -851,87 +752,48 @@ h3 {
     }
 
     .blockActi {
-        display: flex;
-        flex-direction: column;
         border-radius: 20px 20px 20px 20px;
-        box-shadow: 6px 0px 10px #F2F2F2;
         width: 182px;
         height: 267px;
     }
 
-#acti{
-    padding-left: 7px;
-    padding-right: 7px;
-}
+    #acti {
+        padding-left: 7px;
+        padding-right: 7px;
+    }
 
     #vport,
     #pomeg,
     #cal,
     #notre {
-        position: relative;
         width: 182px;
         height: 267px;
         border-radius: 20px 20px 0px 0px;
-        background-size: cover;
-        background-position: center;
     }
 
     .legend {
-        width: 182px;
-        height: 56px;
-        border-radius: 0px 0px 20px 20px;
         box-shadow: 6px 0px px #F2F2F2;
-        margin: 0px;
-        padding-top: 5px;
-        padding-left: 10px;
-    }
-
-    footer {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        background-color: #F2F2F2;
-        height: 180px;
-        margin-top: 60px;
-        padding-top: 45px;
     }
 }
 
 @media screen and (max-width: 768px) {
 
     body {
-        margin-left: 0px;
-        margin-right: 0px;
-        padding-left: 0px;
-        padding-right: 0px;
-        max-width: 768px;
-    }
 
-    #corps {
-        position: relative;
-        display: flex;
-        flex-direction: column;
         justify-content: space-around;
         max-width: 768px;
-        border: 1px solid #F2F2F2;
         width: 100%;
         padding: 0px;
         margin: 0px;
     }
 
-    nav {
-        display: flex;
-        flex-direction: column;
 
-        margin-bottom: 63px;
+    nav {
+        flex-direction: column;
         padding-top: 10px;
     }
 
-    #encre {
-        display: flex;
-        position: relative;
-        flex-direction: row;
-        justify-content: space-between;
+    nav div {
         padding-top: 36px;
         width: 100%;
         margin-left: 0px;
@@ -941,14 +803,6 @@ h3 {
     .link {
         display: flex;
         justify-content: center;
-        position: relative;
-        font-family: 'Raleway';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 19px;
-        color: #000000;
-        text-decoration: none;
         padding-bottom: 50px;
         border-top: 0px;
         border-bottom: 3px solid #F2F2F2;
@@ -957,18 +811,16 @@ h3 {
 
     }
 
-    .link:hover{
+    .link:hover {
         border-bottom: 3px solid #0065FC;
         border-top: 0px;
     }
 
-    #bookie {
-        width: 61.09px;
-        height: 19px;
+    nav img {
         margin: auto;
     }
 
-    #intro {
+    .intro {
         margin-left: 7px;
         font-size: 15px;
     }
@@ -978,7 +830,7 @@ h3 {
         margin-left: -5%;
     }
 
-    #recherche {
+    button span {
         display: none;
     }
 
@@ -988,36 +840,29 @@ h3 {
 
     }
 
-    #section {
-        margin-left: 5%;
-        width: 95%;
-        font-family: 'Raleway';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 17px;
-        line-height: 20px;
+    .section {
+        width: 100%;
+        flex-direction: column;
+        align-items: baseline;
+        margin-left: 0px;
     }
 
-    .filtre2 {
-        display: flex;
+    .section > p {
+        margin-left: 5%;
+    }
+
+     .section div{
         flex-wrap: wrap;
         justify-content: space-around;
-
+        align-items: center;
         height: 150px;
         max-width: 768px;
         width: 100%;
-        margin-left: -5%;
+        margin-left: 0px
     }
 
     .filtre {
-        display: flex;
-        flex-direction: row;
-        font-family: 'Raleway';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 12px;
-        line-height: 20px;
-        height: 150px;
+        font-size: 15px;
         width: 50%;
     }
 
@@ -1026,59 +871,45 @@ h3 {
     #famille,
     #rom {
         justify-content: start;
-        width: 140px;
+        width: 160px;
         height: 46px;
         padding-left: 20px;
     }
 
-    #billet, #homme, #coeur, #chien{
+    #billet,
+    #homme,
+    #coeur,
+    #chien {
         margin-top: 6px;
     }
 
-    #info {
-        width: 100%;
-        justify-content: start;
-    }
-
-    #rond{
-        margin-right: 7px;
+    #rond {
         margin-left: 7px;
     }
 
     /*resultats*/
     .result {
-        position: relative;
-        display: flex;
         flex-direction: column-reverse;
-        margin-top: 39px;
         width: 100%;
     }
 
     .heberge {
-        position: relative;
-        display: flex;
         flex-direction: column;
         align-content: center;
-        height: 1280px;
+        height: 1300px;
 
     }
 
     .container {
-        position: relative;
         width: 100%;
-        height: 1325px;
-        border-radius: 20px;
+        height: 1425px;
         background: #FFFFFF;
-
     }
 
     .boxHeberg {
         position: relative;
         width: 335px;
-        height: 199px;
-        border-radius: 20px;
         box-shadow: 6px 0px 10px #F2F2F2;
-        background-color: #FFFFFF;
     }
 
     .canebiere,
@@ -1091,37 +922,20 @@ h3 {
     }
 
     .container2 {
-        position: relative;
         width: 100%;
-        height: 625px;
         border-radius: 0px;
-        background: #F2F2F2;
     }
 
     .popu {
-        position: relative;
-        display: flex;
         width: 100%;
-        flex-direction: column;
-        align-items: center;
-        margin-left: 0px;
-
     }
 
     #acti {
         position: relative;
-        justify-content: space-around;
-        display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-around;
         height: 850px;
-    }
-
-    .blockActi {
-        display: flex;
-        flex-direction: column;
-        border-radius: 20px 20px 20px 20px;
-        box-shadow: 6px 0px 10px #F2F2F2;
     }
 
     #vport,
@@ -1130,26 +944,21 @@ h3 {
     #notre {
         width: 335px;
         height: 134px;
-        border-radius: 20px 20px 0px 0px;
     }
 
     .legend {
-        width: 316px;
-        border-radius: 0px 0px 20px 20px;
         box-shadow: 6px 0px px #F2F2F2;
     }
 
     footer {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        height: 440px;
-        margin-top: 60px;
-        padding-top: 45px;
+        height: 470px;
         padding-left: 7%;
+        align-items: baseline;
     }
 
-    #propos{
-        margin-top: 10px;
+    .size{
+        flex-direction: column;
+        justify-content: space-around;
+        height: 90%;
     }
 }
