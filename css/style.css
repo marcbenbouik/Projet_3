@@ -92,7 +92,7 @@ form {
     margin-top: 30px;
 }
 
-form div{
+form div {
     background: #F2F2F2;
     width: 50px;
     height: 50px;
@@ -135,7 +135,7 @@ button {
     border-radius: 0px 15px 15px 0px;
 }
 
-#loupe {
+button .loupe {
     display: none;
     color: #FFFFFF;
 }
@@ -180,10 +180,10 @@ button {
     margin-left: 10px;
 }
 
-#anim,
-#eco,
-#famille,
-#rom {
+.anim,
+.eco,
+.famille,
+.rom {
     position: relative;
     border: 2px solid #D9D9D9;
     background: #FFFFFF;
@@ -192,63 +192,65 @@ button {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    width: 100%;
 }
 
-#eco {
-    width: 175px;
+.eco {
+    max-width: 175px;
     height: 44px;
 
 }
 
-#billet {
+.billet {
     position: relative;
     height: 16.26px;
     width: 22px;
 
 }
 
-#famille {
-    width: 136px;
+.famille {
+    max-width: 136px;
     height: 44px;
 }
 
-#homme {
+.homme {
     position: relative;
     height: 22px;
     width: 13.44px;
 }
 
 
-#rom {
-    width: 175px;
+.rom {
+    max-width: 175px;
     height: 44px;
 }
 
-#coeur {
+.coeur {
     position: relative;
     width: 22px;
     height: 18.33px;
 }
 
-#anim {
-    width: 226px;
+.anim {
+    max-width: 226px;
+    min-width: 200px;
     height: 44px;
 }
 
-#chien {
+.chien {
     position: relative;
     height: 22px;
     width: 22px;
 }
 
-#eco:hover,
-#rom:hover,
-#famille:hover,
-#anim:hover {
+.eco:hover,
+.rom:hover,
+.famille:hover,
+.anim:hover {
     background: #DEEBFF;
 }
 
-#info {
+.info {
     display: flex;
     flex-direction: row;
     margin-top: 39px;
@@ -257,7 +259,7 @@ button {
     width: 100%;
 }
 
-#rond {
+.info div {
     position: relative;
     display: flex;
     width: 26px;
@@ -269,7 +271,7 @@ button {
     margin-right: 7px;
 }
 
-#i {
+.info div i {
     width: 4px;
     height: 10px;
     position: relative;
@@ -282,6 +284,7 @@ button {
     flex-direction: row;
     justify-content: space-between;
     margin-top: 39px;
+    gap: 10px;
 }
 
 /* hébergement */
@@ -295,7 +298,7 @@ h2 {
     color: #000000;
 }
 
-.container {
+.result article:first-child {
     position: relative;
     width: 880px;
     height: 626px;
@@ -303,6 +306,7 @@ h2 {
     background: #F2F2F2;
     display: flex;
     flex-direction: column;
+    flex: 7;
 }
 
 .resultTitle {
@@ -323,7 +327,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    height: 450px;
+    height: 72%;
 }
 
 .boxHeberg {
@@ -412,7 +416,7 @@ h2 {
     height: 12px;
 }
 
-#more {
+#hébergement > a{
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -426,22 +430,24 @@ h2 {
 
 /* poupulaire */
 
-.container2 {
+.result article:last-child {
     position: relative;
-    width: 420px;
+    max-width: 420px;
+    width: 100%;
     height: 625px;
     border-radius: 20px;
     background: #F2F2F2;
+    flex: 3;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .popu {
     position: relative;
-    width: 420px;
-    height: 625px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .boxPopu {
@@ -449,49 +455,44 @@ h2 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 343px;
+    max-width: 343px;
+    width: 100%;
     height: 144px;
     margin-bottom: 33px;
     border-radius: 20px;
     background-color: #FFFFFF;
 }
 
-.soleilMatin {
-    width: 137px;
-    height: 134px;
-    border: 5px solid #FFFFFF;
-    border-radius: 20px 0px 0px 20px;
-    background-image: url(../Images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.coeurEau {
-    width: 137px;
-    height: 134px;
-    border: 5px solid #FFFFFF;
-    border-radius: 20px 0px 0px 20px;
-    background-image: url(../Images/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
+.soleilMatin,
+.coeurEau,
 .bleuBlanc {
     width: 137px;
     height: 134px;
     border: 5px solid #FFFFFF;
     border-radius: 20px 0px 0px 20px;
-    background-image: url(../Images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
     background-size: cover;
     background-position: center;
+}
+
+.soleilMatin {
+    background-image: url(../Images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+}
+
+.coeurEau {
+    background-image: url(../Images/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg);
+}
+
+.bleuBlanc {
+    background-image: url(../Images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
 }
 
 .descrPopu {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-right: 5px;
+    margin-right: 25px;
     height: 136px;
+    width: 150px;
 }
 
 .titre2 {
@@ -543,7 +544,7 @@ i {
     height: 12px;
 }
 
-#courbe {
+.courbe {
     position: absolute;
     top: 45px;
     right: 50px;
@@ -553,37 +554,39 @@ i {
     margin-top: 60px;
 }
 
-#acti {
+#activités article {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 10px;
 }
 
-#vport,
-#pomeg,
-#cal,
-#notre {
+.vport,
+.pomeg,
+.cal,
+.notre {
     position: relative;
-    width: 302px;
+    max-width: 302px;
+    min-width: 200px;
     height: 389px;
     background-size: cover;
     background-position: center;
     border-radius: 20px 20px 0px 0px;
 }
 
-#vport {
+.vport {
     background-image: url(../Images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
 }
 
-#pomeg {
+.pomeg {
     background-image: url(../Images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
 }
 
-#cal {
+.cal {
     background-image: url(../Images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
 }
 
-#notre {
+.notre {
     background-image: url(../Images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
 }
 
@@ -592,6 +595,9 @@ i {
     flex-direction: column;
     border-radius: 20px;
     box-shadow: 6px 0px 10px #F2F2F2;
+    max-width: 302px;
+    min-width: 200px;
+    width: 100%;
 }
 
 .legend {
@@ -637,7 +643,7 @@ h3 {
 }
 
 
-#propos {
+.propos {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -651,6 +657,54 @@ h3 {
     height: 50px;
     line-height: 100%;
 
+}
+
+@media screen and (max-width: 1220px) and (min-width: 992px) {
+    .resultTitle {
+        margin-left: 20px;
+    }
+
+    #courbe {
+        right: 10px;
+        top: 47px;
+    }
+
+    .boxHeberg {
+        width: 190px;
+    }
+
+    .descrHeberg {
+        width: 170px;
+    }
+
+    .canebiere,
+    .port,
+    .mouettes,
+    .mer,
+    .panier,
+    .amina {
+        width: 180px;
+        height: 114px;
+    }
+
+    .boxPopu {
+        width: 250px;
+    }
+
+    .descrPopu {
+        width: 120px;
+        margin-right: 15px;
+    }
+
+    .titre2 {
+        width: 125px;
+    }
+
+    .soleilMatin,
+    .coeurEau,
+    .bleuBlanc {
+        width: 106px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -678,7 +732,14 @@ h3 {
         width: 98%;
     }
 
-    #rond {
+    .anim,
+    .eco,
+    .famille,
+    .rom {
+        margin-left: 10px;
+    }
+
+    .info div {
         margin-left: 7px;
     }
 
@@ -688,34 +749,41 @@ h3 {
         height: 950px;
     }
 
-    .container {
+    .result article:first-child {
         width: 100%;
     }
 
     /* poupulaire */
 
-    .container2 {
+    .result article:last-child {
+        min-width: none;
+        max-width: none;
         width: 100%;
         height: 278px;
+        padding: 0px;
     }
 
     .popu {
-        width: 100%;
         height: 60%;
         margin-left: 0px;
         margin-top: 0px;
         flex-direction: row;
         justify-content: space-around;
         align-items: start;
+        gap: 0px;
+        width: 99%;
+        padding-left: 3px;
+        padding-right: 3px;
     }
 
     .boxPopu {
-        width: 252px;
-        height: 144px;
+        max-width: 245px;
+        width: 100%;
     }
 
     .descrPopu {
         height: 95%;
+        margin-right: 0px;
     }
 
     .titre2 {
@@ -734,39 +802,43 @@ h3 {
         width: 106px;
     }
 
-    #vport {
+    .vport {
         background-image: url(../Images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
     }
 
-    #pomeg {
+    .pomeg {
         background-image: url(../Images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
     }
 
-    #cal {
+    .cal {
         background-image: url(../Images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
     }
 
-    #notre {
+    .notre {
         background-image: url(../Images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
 
     }
 
     .blockActi {
         border-radius: 20px 20px 20px 20px;
-        width: 182px;
         height: 267px;
+        max-width: 182px;
+        min-width: 100px;
+        width: 100%;
     }
 
-    #acti {
+    #activités article {
         padding-left: 7px;
         padding-right: 7px;
     }
 
-    #vport,
-    #pomeg,
-    #cal,
-    #notre {
-        width: 182px;
+    .vport,
+    .pomeg,
+    .cal,
+    .notre {
+        max-width: 182px;
+        min-width: 100px;
+        width: 100%;
         height: 267px;
         border-radius: 20px 20px 0px 0px;
     }
@@ -779,9 +851,7 @@ h3 {
 @media screen and (max-width: 768px) {
 
     body {
-
         justify-content: space-around;
-        max-width: 768px;
         width: 100%;
         padding: 0px;
         margin: 0px;
@@ -834,24 +904,24 @@ h3 {
         display: none;
     }
 
-    #loupe {
+    button .loupe {
         display: initial;
         color: #FFFFFF;
 
     }
 
     .section {
-        width: 100%;
+        width: 99%;
         flex-direction: column;
-        align-items: baseline;
         margin-left: 0px;
+        align-items: start;
     }
 
-    .section > p {
+    .section p:first-child {
         margin-left: 5%;
     }
 
-     .section div{
+    .section div {
         flex-wrap: wrap;
         justify-content: space-around;
         align-items: center;
@@ -866,24 +936,26 @@ h3 {
         width: 50%;
     }
 
-    #anim,
-    #eco,
-    #famille,
-    #rom {
+    .anim,
+    .eco,
+    .famille,
+    .rom {
         justify-content: start;
-        width: 160px;
         height: 46px;
         padding-left: 20px;
+        max-width: 150px;
+        min-width: 150px;
     }
 
-    #billet,
-    #homme,
-    #coeur,
-    #chien {
+    .billet,
+    .homme,
+    .coeur,
+    .chien {
         margin-top: 6px;
+        margin-left: -7px;
     }
 
-    #rond {
+    .info div {
         margin-left: 7px;
     }
 
@@ -900,7 +972,7 @@ h3 {
 
     }
 
-    .container {
+    .result article:first-child {
         width: 100%;
         height: 1425px;
         background: #FFFFFF;
@@ -921,16 +993,18 @@ h3 {
         width: 325px;
     }
 
-    .container2 {
+    .result article:last-child {
         width: 100%;
+        max-width: none;
         border-radius: 0px;
+        padding: 0px;
     }
 
     .popu {
         width: 100%;
     }
 
-    #acti {
+    #activités article{
         position: relative;
         flex-direction: column;
         align-items: center;
@@ -938,10 +1012,10 @@ h3 {
         height: 850px;
     }
 
-    #vport,
-    #pomeg,
-    #cal,
-    #notre {
+    .vport,
+    .pomeg,
+    .cal,
+    .notre {
         width: 335px;
         height: 134px;
     }
@@ -956,7 +1030,7 @@ h3 {
         align-items: baseline;
     }
 
-    .size{
+    .size {
         flex-direction: column;
         justify-content: space-around;
         height: 90%;
