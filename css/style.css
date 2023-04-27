@@ -1,15 +1,3 @@
-body {
-    max-width: 1400px;
-    margin: auto;
-    position: relative;
-    flex-direction: column;
-    justify-content: flex-start;
-
-
-    padding-left: 62px;
-    padding-right: 50px;
-}
-
 /* en-tete avec logo*/
 a {
     text-decoration: none;
@@ -21,7 +9,7 @@ a:visited {
 
 }
 
-nav {
+header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -31,14 +19,14 @@ nav {
     margin-right: 0%;
 }
 
-nav div {
+nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: -43px;
 }
 
-nav img {
+header img {
     width: 61.09px;
     height: 19px;
 }
@@ -57,14 +45,25 @@ nav img {
 }
 
 .link:hover {
-    font-family: 'Raleway';
-    font-style: normal;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
     color: #0065FC;
     border-top: 3px solid #0065FC;
 }
+
+body {
+    box-sizing: border-box;
+    max-width: 1440px;
+    margin: auto;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-start;
+
+
+    padding-left: 62px;
+    padding-right: 50px;
+}
+
+/*texte d'introduction*/
 
 .intro {
     font-family: 'Raleway';
@@ -104,7 +103,7 @@ form div i {
     width: 14px;
     height: 18px;
     margin-left: 18px;
-    margin-top: 16px;
+    margin-top: 14px;
     color: #000000;
 }
 
@@ -152,17 +151,13 @@ button .loupe {
     display: flex;
     flex-direction: row;
     align-items: center;
+    height: auto;
 }
 
 .filtre {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 17px;
-    line-height: 20px;
     height: 50px;
 }
 
@@ -170,14 +165,11 @@ button .loupe {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 17px;
     line-height: 20px;
     width: 100%;
     max-width: 890px;
     margin-left: 10px;
+    height: auto;
 }
 
 .anim,
@@ -193,12 +185,11 @@ button .loupe {
     justify-content: space-around;
     align-items: center;
     width: 100%;
+    height: 44px;
 }
 
 .eco {
     max-width: 175px;
-    height: 44px;
-
 }
 
 .billet {
@@ -210,7 +201,6 @@ button .loupe {
 
 .famille {
     max-width: 136px;
-    height: 44px;
 }
 
 .homme {
@@ -222,7 +212,6 @@ button .loupe {
 
 .rom {
     max-width: 175px;
-    height: 44px;
 }
 
 .coeur {
@@ -234,7 +223,6 @@ button .loupe {
 .anim {
     max-width: 226px;
     min-width: 200px;
-    height: 44px;
 }
 
 .chien {
@@ -262,18 +250,17 @@ button .loupe {
 .info div {
     position: relative;
     display: flex;
-    width: 26px;
-    height: 22px;
+    width: 24px;
+    height: 24px;
     border: 1px solid #D9D9D9;
-    border-radius: 24px;
-    justify-content: center;
-    padding-top: 4px;
-    margin-right: 7px;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center ;
+    padding-top: 0px;
+    margin-right: 2%;
 }
 
 .info div i {
-    width: 4px;
-    height: 10px;
     position: relative;
 }
 
@@ -300,7 +287,8 @@ h2 {
 
 .result article:first-child {
     position: relative;
-    width: 880px;
+    width: 100%;
+    max-width: 880px;
     height: 626px;
     border-radius: 20px;
     background: #F2F2F2;
@@ -311,32 +299,32 @@ h2 {
 
 .resultTitle {
     position: relative;
-    margin-left: 30px;
+    margin-left: 4%;
     margin-top: 42px;
     margin-bottom: 23px;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 26px;
-    color: #000000;
 }
+
+/*hébergement à Marseille*/
 
 .heberge {
     position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    height: 72%;
+    width: 100%;
+    column-gap: 5px;
+    row-gap: 20px;
+
 }
 
 .boxHeberg {
     position: relative;
-    width: 246px;
-    height: 199px;
+    width: 28%;
     border-radius: 20px;
     background-color: #FFFFFF;
     justify-content: space-between;
+
+
 }
 
 .canebiere,
@@ -345,7 +333,8 @@ h2 {
 .mer,
 .panier,
 .amina {
-    width: 236px;
+    width: auto;
+    max-width: 236px;
     height: 114px;
     border: 5px solid #FFFFFF;
     border-radius: 20px 20px 0px 0px;
@@ -382,8 +371,10 @@ h2 {
     flex-direction: column;
     justify-content: space-around;
     height: 68px;
-    padding-left: 10px;
+    padding-left: 6%;
     padding-bottom: 5px;
+    width: 100%;
+    max-width: 246px;
 }
 
 .titre {
@@ -395,6 +386,7 @@ h2 {
     font-size: 16px;
     line-height: 19px;
     color: #000000;
+    width: 175px;
 
 }
 
@@ -407,6 +399,7 @@ h2 {
     line-height: 16px;
     color: #000000;
     margin-bottom: 0px;
+    width: 160px;
 }
 
 .etoile {
@@ -414,9 +407,10 @@ h2 {
     flex-direction: row;
     position: relative;
     height: 12px;
+    width: 100px;
 }
 
-#hébergement > a{
+#hebergement>a {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -424,11 +418,11 @@ h2 {
     line-height: 21px;
     color: #000000;
     margin-left: 3%;
-    margin-top: 20px;
+    margin-top: 40px;
 
 }
 
-/* poupulaire */
+/* populaire */
 
 .result article:last-child {
     position: relative;
@@ -466,7 +460,7 @@ h2 {
 .soleilMatin,
 .coeurEau,
 .bleuBlanc {
-    width: 137px;
+    width: 100%;
     height: 134px;
     border: 5px solid #FFFFFF;
     border-radius: 20px 0px 0px 20px;
@@ -492,25 +486,28 @@ h2 {
     justify-content: space-around;
     margin-right: 25px;
     height: 136px;
-    width: 150px;
+    width: 100%;
+    min-width: 100px;
+
 }
 
 .titre2 {
     position: relative;
-    width: 160px;
+    width: 100%;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
     color: #000000;
-    margin-bottom: -17px;
+    margin-bottom: 0px;
+
 
 }
 
 .descr2 {
     position: relative;
-    width: 169px;
+    width: 100%;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
@@ -518,6 +515,7 @@ h2 {
     line-height: 16px;
     color: #000000;
     margin-bottom: 17px;
+
 }
 
 /*logo bleu */
@@ -546,15 +544,15 @@ i {
 
 .courbe {
     position: absolute;
-    top: 45px;
-    right: 50px;
+    top: 49px;
+    right: 9%;
 }
 
-#activités {
+#activites {
     margin-top: 60px;
 }
 
-#activités article {
+#activites article {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -659,70 +657,23 @@ h3 {
 
 }
 
-@media screen and (max-width: 1220px) and (min-width: 992px) {
-    .resultTitle {
-        margin-left: 20px;
-    }
-
-    #courbe {
-        right: 10px;
-        top: 47px;
-    }
-
-    .boxHeberg {
-        width: 190px;
-    }
-
-    .descrHeberg {
-        width: 170px;
-    }
-
-    .canebiere,
-    .port,
-    .mouettes,
-    .mer,
-    .panier,
-    .amina {
-        width: 180px;
-        height: 114px;
-    }
-
-    .boxPopu {
-        width: 250px;
-    }
-
-    .descrPopu {
-        width: 120px;
-        margin-right: 15px;
-    }
-
-    .titre2 {
-        width: 125px;
-    }
-
-    .soleilMatin,
-    .coeurEau,
-    .bleuBlanc {
-        width: 106px;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 992px) {
-    body {
-        justify-content: center;
-        max-width: 992px;
-        padding-left: 0px;
-        padding-right: 0px;
-    }
+@media screen and (max-width: 992px){
 
     #intro,
     form,
-    nav {
+    header {
         margin-left: 7px;
     }
 
-    nav div {
+    nav {
         margin-right: 7px;
+    }
+
+    body {
+        justify-content: center;
+        max-width: 992px;
+        padding-left: 35px;
+        padding-right: 35px;
     }
 
     /* filtres*/
@@ -743,24 +694,36 @@ h3 {
         margin-left: 7px;
     }
 
-    /*resultats*/
+    /*Hébergements*/
     .result {
         flex-direction: column;
-        height: 950px;
+        height: 100%;
+        max-height: 1500px;
     }
 
     .result article:first-child {
         width: 100%;
     }
 
-    /* poupulaire */
+    /* populaire */
 
     .result article:last-child {
-        min-width: none;
+        min-width: unset;
         max-width: none;
         width: 100%;
-        height: 278px;
+        height: 100%;
+        max-height: 630px;
         padding: 0px;
+    }
+
+    .heberge {
+        column-gap: 5px;
+        row-gap: 15px;
+    }
+
+    #hebergement>a {
+        margin-top: 40px;
+        margin-bottom: 20px;
     }
 
     .popu {
@@ -770,7 +733,7 @@ h3 {
         flex-direction: row;
         justify-content: space-around;
         align-items: start;
-        gap: 0px;
+        gap: 5px;
         width: 99%;
         padding-left: 3px;
         padding-right: 3px;
@@ -778,28 +741,28 @@ h3 {
 
     .boxPopu {
         max-width: 245px;
-        width: 100%;
     }
 
     .descrPopu {
         height: 95%;
+        width: 100%;
         margin-right: 0px;
     }
 
     .titre2 {
-        width: 111px;
+        width: 100%;
         margin-bottom: 3px;
     }
 
     .descr2 {
-        width: 120px;
+        width: 90%;
 
     }
 
     .soleilMatin,
     .coeurEau,
     .bleuBlanc {
-        width: 106px;
+        width: 80%;
     }
 
     .vport {
@@ -827,7 +790,7 @@ h3 {
         width: 100%;
     }
 
-    #activités article {
+    #activites article {
         padding-left: 7px;
         padding-right: 7px;
     }
@@ -844,26 +807,19 @@ h3 {
     }
 
     .legend {
-        box-shadow: 6px 0px px #F2F2F2;
+        box-shadow: 6px 0px 0px #F2F2F2;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
-    body {
-        justify-content: space-around;
-        width: 100%;
-        padding: 0px;
-        margin: 0px;
-    }
-
-
-    nav {
+    header {
         flex-direction: column;
+        align-items: center;
         padding-top: 10px;
     }
 
-    nav div {
+    nav {
         padding-top: 36px;
         width: 100%;
         margin-left: 0px;
@@ -873,7 +829,7 @@ h3 {
     .link {
         display: flex;
         justify-content: center;
-        padding-bottom: 50px;
+        padding-bottom: 20px;
         border-top: 0px;
         border-bottom: 3px solid #F2F2F2;
         width: 100%;
@@ -890,14 +846,27 @@ h3 {
         margin: auto;
     }
 
-    .intro {
-        margin-left: 7px;
-        font-size: 15px;
+    body {
+        justify-content: space-around;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+
+
+    h1,
+    .intro p {
+        margin-left: 5%;
+    }
+
+    h1 {
+        font-size: 24px;
     }
 
     form {
         justify-content: center;
-        margin-left: -5%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     button span {
@@ -915,25 +884,28 @@ h3 {
         flex-direction: column;
         margin-left: 0px;
         align-items: start;
+        padding-left: 0px;
     }
 
     .section p:first-child {
         margin-left: 5%;
+        margin-bottom: 10px;
     }
 
     .section div {
         flex-wrap: wrap;
         justify-content: space-around;
         align-items: center;
-        height: 150px;
-        max-width: 768px;
-        width: 100%;
-        margin-left: 0px
+        row-gap: 10px;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
     }
 
     .filtre {
-        font-size: 15px;
-        width: 50%;
+        font-size: 11px;
+        width: 100%;
     }
 
     .anim,
@@ -943,8 +915,10 @@ h3 {
         justify-content: start;
         height: 46px;
         padding-left: 20px;
-        max-width: 150px;
-        min-width: 150px;
+        width: 46%;
+        min-width: unset;
+        max-width: 160px;
+        box-sizing: border-box;
     }
 
     .billet,
@@ -955,6 +929,10 @@ h3 {
         margin-left: -7px;
     }
 
+    .info{
+        margin-top: 0px;
+    }
+
     .info div {
         margin-left: 7px;
     }
@@ -963,24 +941,34 @@ h3 {
     .result {
         flex-direction: column-reverse;
         width: 100%;
+        max-height: none;
     }
 
     .heberge {
         flex-direction: column;
         align-content: center;
         height: 1300px;
-
+        max-height: none;
+    }
+    .boxHeberg{
+        width: 100%;
+        max-width: 335px;
+    }
+    #hebergement>a {
+        padding-top: 20px;
+        margin-bottom: -20px;
     }
 
     .result article:first-child {
         width: 100%;
+
         height: 1425px;
         background: #FFFFFF;
     }
 
     .boxHeberg {
         position: relative;
-        width: 335px;
+        max-width: 335px;
         box-shadow: 6px 0px 10px #F2F2F2;
     }
 
@@ -990,7 +978,7 @@ h3 {
     .mer,
     .panier,
     .amina {
-        width: 325px;
+        max-width: 325px;
     }
 
     .result article:last-child {
@@ -1002,26 +990,43 @@ h3 {
 
     .popu {
         width: 100%;
+        flex-direction: column;
+        align-items: center;
+        max-height: none;
     }
 
-    #activités article{
+    .boxPopu {
+        max-width: 335px;
+    }
+    
+
+    #activites article {
         position: relative;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
         height: 850px;
+        gap: 20px;
+    }
+
+    .blockActi {
+        max-width: 335px;
+        width: 100%;
     }
 
     .vport,
     .pomeg,
     .cal,
     .notre {
-        width: 335px;
+        max-width: 335px;
         height: 134px;
     }
 
     .legend {
-        box-shadow: 6px 0px px #F2F2F2;
+        box-shadow: 6px 0px 0px #F2F2F2;
+        height: 55px;
+        box-sizing: border-box;
+        padding-top: 10px;
     }
 
     footer {
